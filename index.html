@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Truchilli | Guntur Chilli Powders, Karam Podis & Homemade Masalas</title>
+  <meta name="description" content="Truchilli, from the Guntur Mirchi: sun-dried Guntur chilli powders, karam podis, homemade masalas, turmeric and gongura pickle. Slow-ground in small batches with no colours, preservatives or chemicals. Delivered across India." />
+  <meta property="og:title" content="Truchilli | From the Guntur Mirchi" />
+  <meta property="og:description" content="Guntur chilli powders, karam podis and homemade masalas. 100% natural, slow-ground in small batches." />
+  <meta property="og:image" content="https://truchilli.com/img/chilli-powder.jpg" />
+  <meta name="theme-color" content="#c8102e" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=DM+Sans:wght@400;500;600;700&family=Tiro+Telugu&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  
+</head>
+<body>
+
+  <!-- Announcement marquee -->
+  <div class="announce">
+    <div class="announce-track">
+      <span>🌶️ Sun-dried Guntur chillies, slow-ground in small batches</span>
+      <span>🚚 FREE shipping on orders above 3 kg</span>
+      <span>📦 AP &amp; Telangana in 3–6 days · Rest of India in 5–9 days</span>
+      <span>🌿 No colours · No preservatives · No chemicals</span>
+      <span>✈️ International orders: message us on WhatsApp</span>
+      <span>🌶️ Sun-dried Guntur chillies, slow-ground in small batches</span>
+      <span>🚚 FREE shipping on orders above 3 kg</span>
+      <span>📦 AP &amp; Telangana in 3–6 days · Rest of India in 5–9 days</span>
+      <span>🌿 No colours · No preservatives · No chemicals</span>
+      <span>✈️ International orders: message us on WhatsApp</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">
+        <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <a href="#top" class="logo" aria-label="Truchilli home">
+        <img src="assets/logo.png" alt="Truchilli, from the Guntur Mirchi" />
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#categories">Categories</a>
+        <a href="#trial">Chilli Powders</a>
+        <a href="#shop">Shop</a>
+        <a href="#why">Why Us</a>
+        <a href="#faq">FAQ</a>
+        <a href="#track" data-open-track>Track Order</a>
+        <a href="#account" data-open-account>My Account</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <select id="currency" class="currency" aria-label="Currency">
+          <option value="INR">₹ INR</option>
+          <option value="USD">$ USD</option>
+          <option value="GBP">£ GBP</option>
+          <option value="CAD">C$ CAD</option>
+        </select>
+        <button class="icon-btn" id="searchBtn" aria-label="Search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button class="icon-btn" id="accountBtn" aria-label="My account">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </button>
+        <button class="icon-btn" id="wishBtn" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.5-9.3C1 8 3.4 4.5 7 4.5c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.6 0 6 3.5 4.5 7.2C19.5 16.4 12 21 12 21z"/></svg>
+          <span class="badge" id="wishCount">0</span>
+        </button>
+        <button class="icon-btn" id="cartBtn" aria-label="Cart">
+          <svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 2-1.5L21 8H6.2"/><circle cx="10" cy="20.5" r="1.3"/><circle cx="17.5" cy="20.5" r="1.3"/></svg>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+    <div class="search-bar" id="searchBar">
+      <div class="container">
+        <input type="search" id="searchInput" placeholder="Search chilli powders, karam podis, masalas, pickles…" autocomplete="off" />
+        <div class="search-results" id="searchResults"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob b1"></span><span class="blob b2"></span>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="telugu">గుంటూరు మిర్చి</span><span class="dot"> · </span>From the Guntur Mirchi</p>
+          <h1>Guntur chilli powders, <em>slow-ground</em> the traditional way.</h1>
+          <p class="lead">Sun-dried chillies from Guntur farmers, karam podis, homemade masalas and turmeric, ground in small batches so nothing is lost to heat. No colours, no preservatives, no chemicals.</p>
+          <div class="hero-ctas">
+            <a href="#shop" class="btn btn-primary">Shop now <span aria-hidden="true">→</span></a>
+            <a href="#trial" class="btn btn-ghost">See the chilli powders</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong data-count="26">0</strong><span>Natural products</span></li>
+            <li><strong data-count="12">0</strong><span>Chilli powders &amp; podis</span></li>
+            <li><strong>100<small>%</small></strong><span>Natural, nothing added</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-plate">
+            <img src="img/chilli-powder.jpg" alt="A pack of Truchilli Guntur chilli powder beside bowls of red chilli powder and dried Guntur chillies" />
+          </div>
+          <div class="float-chip c1"><span>🌶️</span> Guntur chillies</div>
+          <div class="float-chip c2"><span>🌿</span> No preservatives</div>
+          <div class="float-chip c3"><span>✅</span> FSSAI licensed</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust strip -->
+    <section class="trust">
+      <div class="container trust-grid">
+        <div><span class="ti">🌶️</span><div><strong>Straight from Guntur</strong><small>Chillies bought directly from farmers</small></div></div>
+        <div><span class="ti">⚙️</span><div><strong>Slow-ground, small batches</strong><small>Low heat keeps the oils and aroma</small></div></div>
+        <div><span class="ti">🚚</span><div><strong>Delivered across India</strong><small>Free shipping above 3 kg</small></div></div>
+        <div><span class="ti">🛡️</span><div><strong>FSSAI licensed</strong><small data-fssai="Lic. No. {n}">Lic. No. 10125007000061</small></div></div>
+      </div>
+    </section>
+
+    <!-- Offers: filled by js/app.js; stays hidden when there are no offer products -->
+    <section class="section offers" id="offers" hidden>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">🪔 Limited-time offers</p>
+          <h2 id="offersTitle">Festive Offers</h2>
+          <p id="offersText"></p>
+        </div>
+        <div class="offer-grid" id="offerGrid"></div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Explore</p>
+          <h2>Shop by category</h2>
+        </div>
+        <div class="cat-grid" id="catGrid"></div>
+      </div>
+    </section>
+
+    <!-- Featured: the chilli powders -->
+    <section class="section trial" id="trial">
+      <div class="container">
+        <div class="section-head light reveal">
+          <p class="eyebrow">The heart of Truchilli</p>
+          <h2>The Guntur chilli powders</h2>
+          <p>Pachi karam, kura karam, pachalla karam and Byadagi: four powders, one Guntur Mirchi Yard.</p>
+        </div>
+        <div class="trial-row" id="trialRow"></div>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="section" id="shop">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">The Pantry</p>
+          <h2>All products</h2>
+        </div>
+
+        <div class="shop-layout">
+        <aside class="shop-side">
+          <h3 class="shop-side-title">Categories</h3>
+          <div class="tabs" id="tabs" role="tablist"></div>
+        </aside>
+        <div class="shop-main">
+        <div class="toolbar">
+          <div class="filters">
+            <label class="toggle"><input type="checkbox" id="fMild" /><span></span>Mild only (no chilli)</label>
+            <select id="sort" aria-label="Sort products">
+              <option value="featured">Featured</option>
+              <option value="low">Price: low to high</option>
+              <option value="high">Price: high to low</option>
+              <option value="az">Name: A–Z</option>
+            </select>
+          </div>
+        </div>
+        <p class="result-count" id="resultCount"></p>
+        <div class="grid" id="grid"></div>
+        <div class="load-more-wrap"><button class="btn btn-outline" id="loadMore">Load more</button></div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Truchilli (EN / TE) -->
+    <section class="section why" id="why" data-lang="te">
+      <div class="container">
+        <div class="why-top">
+          <div class="section-head why-head">
+            <p class="eyebrow">Why Truchilli?</p>
+            <h2 class="lang-en">Quality before quantity.</h2>
+            <h2 class="lang-te telugu">పరిమాణం కంటే నాణ్యతే ముందు.</h2>
+            <p class="why-motto lang-en">Sun-dried · Slow-ground · Nothing added</p>
+            <p class="why-motto lang-te telugu">ఎండలో ఆరబెట్టి · నెమ్మదిగా విసిరి · ఏమీ కలపకుండా</p>
+          </div>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-lang-btn="en" aria-pressed="false">English</button>
+            <button type="button" data-lang-btn="te" class="telugu active" aria-pressed="true">తెలుగు</button>
+          </div>
+        </div>
+
+        <div class="why-layout">
+          <div class="why-story">
+            <p class="lang-en">Truchilli comes from The Guntur Mirchi, a family business on Mirchi Yard Road in Guntur, home to Asia's largest chilli market. We buy our chillies directly from farmers, sun-dry them and grind them ourselves.</p>
+            <p class="lang-en">Even with large machines, we grind in small batches at a slow pace so the chillies never heat up. That is what keeps the natural oils, the deep red colour and the aroma that a shop-bought powder loses.</p>
+            <p class="lang-en">Every pack, from Guntur pachi karam and karam podis to garam masala, turmeric and gongura pickle, is made the way it is made at home: 100% natural, with no artificial colours, preservatives or chemicals.</p>
+            <p class="lang-te telugu">ట్రూచిల్లీ గుంటూరు మిర్చి యార్డ్ రోడ్డులోని “ది గుంటూరు మిర్చి” కుటుంబ వ్యాపారం నుంచి వచ్చింది. ఆసియాలోనే అతిపెద్ద మిర్చి మార్కెట్ ఉన్న గుంటూరులో, మేము రైతుల దగ్గరే నేరుగా మిర్చి కొని, ఎండలో ఆరబెట్టి, మేమే విసురుతాం.</p>
+            <p class="lang-te telugu">పెద్ద యంత్రాలు ఉన్నా, మిర్చి వేడెక్కకుండా చిన్న చిన్న బ్యాచ్‌లుగా నెమ్మదిగా విసురుతాం. అందుకే సహజమైన నూనెలు, ఎర్రని రంగు, ఘుమఘుమలాడే వాసన అలాగే ఉంటాయి.</p>
+            <p class="lang-te telugu">గుంటూరు పచ్చి కారం, కారం పొడులు, గరం మసాలా, పసుపు, గోంగూర పచ్చడి వరకు ప్రతి ప్యాకెట్‌ను ఇంట్లో చేసినట్టే చేస్తాం: 100% సహజం, కృత్రిమ రంగులు, ప్రిజర్వేటివ్‌లు, రసాయనాలు లేకుండా.</p>
+            <p class="why-sign"><span class="lang-en">Made with care in Guntur. Taste the difference once, and you will not go back.</span><span class="lang-te telugu">గుంటూరులో శ్రద్ధగా తయారు చేశాం. ఒక్కసారి రుచి చూడండి, మళ్ళీ వెనక్కి వెళ్ళరు.</span></p>
+          </div>
+
+          <div class="ing-board">
+            <h3><span class="lang-en">What goes into our packs</span><span class="lang-te telugu">మా ప్యాకెట్లలో ఏముంది</span></h3>
+            <div class="ing-group">
+              <h4><span class="lang-en">The chillies</span><span class="lang-te telugu">మిర్చి</span></h4>
+              <div class="ing-row" data-ing="base"></div>
+            </div>
+            <div class="ing-group">
+              <h4><span class="lang-en">Roasted for the karam podis</span><span class="lang-te telugu">కారం పొడుల కోసం వేయించినవి</span></h4>
+              <div class="ing-row" data-ing="millets"></div>
+            </div>
+            <div class="ing-group">
+              <h4><span class="lang-en">Whole spices, ground slow</span><span class="lang-te telugu">నెమ్మదిగా విసిరిన మసాలా దినుసులు</span></h4>
+              <div class="ing-row" data-ing="seeds"></div>
+            </div>
+            <p class="ing-note"><span class="lang-en">Sun-dried, roasted and ground at low temperature so the natural oils, colour and aroma stay in the pack.</span><span class="lang-te telugu">ఎండలో ఆరబెట్టి, వేయించి, తక్కువ వేడిలో విసరడం వల్ల సహజ నూనెలు, రంగు, వాసన ప్యాకెట్‌లోనే ఉంటాయి.</span></p>
+          </div>
+        </div>
+
+        <figure class="why-quote">
+          <blockquote>
+            <p class="lang-en">“Prepared with the same care as homemade.”</p>
+            <p class="lang-te telugu">“ఇంట్లో చేసినంత శ్రద్ధగా తయారు చేసినవి.”</p>
+          </blockquote>
+          <figcaption>
+            <span class="lang-en">Pure, aromatic powders made with a process where quality comes before quantity.</span>
+            <span class="lang-te telugu">పరిమాణం కంటే నాణ్యతకే ప్రాధాన్యత ఇచ్చే పద్ధతిలో తయారైన స్వచ్ఛమైన, ఘుమఘుమలాడే పొడులు.</span>
+          </figcaption>
+          <a href="#shop" class="btn btn-primary"><span class="lang-en">Order now</span><span class="lang-te telugu">ఇప్పుడే ఆర్డర్ చేయండి</span></a>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Bulk CTA -->
+    <section class="bulk">
+      <div class="container bulk-inner reveal">
+        <div>
+          <h2>Restaurants, hotels &amp; bulk orders</h2>
+          <p>2 kg and 3 kg packs are on the site. For larger quantities, resellers or gifting, tell us what you need and we'll quote the same day.</p>
+        </div>
+        <a class="btn btn-light" target="_blank" rel="noopener" data-wa="Hi Truchilli, I'd like to enquire about a bulk order." href="https://wa.me/918142424269">
+          Chat on WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow">Good to know</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq">
+          <details><summary>How much is shipping and how long does it take?</summary><p>Shipping is ₹99 up to 1 kg, ₹149 up to 2 kg and ₹179 up to 3 kg. Orders above 3 kg ship free. Andhra Pradesh and Telangana take 3–6 business days, the rest of India 5–9. For international orders, message us on WhatsApp.</p></details>
+          <details><summary>How hot are the chilli powders?</summary><p>Guntur pachi karam and pachalla karam are the hottest, kura karam is medium with roasted spices, and Byadagi is mild with a deep red colour. Use the “Mild only” filter in the shop to hide everything with chilli.</p></details>
+          <details><summary>How long do the powders stay fresh?</summary><p>Chilli powders, masalas and turmeric keep for months in an airtight jar away from sunlight. Karam podis with nuts, dals or seeds are best within 2–3 months. Check the best-before date on your pack.</p></details>
+          <details><summary>Do you add any colour or preservatives?</summary><p>No. Everything is 100% natural: sun-dried chillies and whole spices, ground at low temperature. No artificial colours, preservatives or chemicals.</p></details>
+          <details><summary>Can I order in bulk or for a restaurant?</summary><p>Yes. 2 kg and 3 kg packs are on the site, and for bigger quantities message us on WhatsApp at +91 81424 24269.</p></details>
+          <details><summary>How do I place an order?</summary><p>Add items to your cart, tap “Checkout”, fill in your address and pay securely online. You'll get an order number to track your order here on the site.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/logo.png" alt="Truchilli" class="footer-logo" />
+        <p>From the Guntur Mirchi: chilli powders, karam podis and masalas, 100% natural.</p>
+        <p class="fssai" data-fssai="FSSAI Lic. No: {n}">FSSAI Lic. No: 10125007000061</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="#shop" data-cat="chilli">Chilli Powders / Kaaram</a>
+        <a href="#shop" data-cat="podis">Karam Podis</a>
+        <a href="#shop" data-cat="masalas">Masalas</a>
+        <a href="#shop" data-cat="pickles">Pickles</a>
+        <a href="#shop" data-cat="essentials">Turmeric &amp; Ragi Flour</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="#track" data-open-track>Track your order</a>
+        <a href="policies/shipping.html">Shipping policy</a>
+        <a href="policies/refund.html">Refund policy</a>
+        <a href="policies/privacy.html">Privacy policy</a>
+        <a href="policies/terms.html">Terms &amp; conditions</a>
+        <a href="contact.html">Contact us</a>
+      </div>
+      <div>
+        <h4>Stay in the loop</h4>
+        <p>New launches and offers, straight to your inbox.</p>
+        <form class="newsletter" id="newsletter">
+          <input type="email" name="email" id="nlEmail" required placeholder="you@email.com" aria-label="Email" />
+          <button class="btn btn-primary" type="submit">Join</button>
+        </form>
+        <div class="socials">
+          <a href="https://wa.me/918142424269" data-wa="" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://www.instagram.com/truchilli" data-social="instagram" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" data-social="facebook" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Truchilli · The Guntur Mirchi. All rights reserved.</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" data-wa="" href="https://wa.me/918142424269" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32"><path fill="#fff" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.4 14.7 14.7 0 0 0 5.7 5c2.1.9 2.9 1 4 .8a3.4 3.4 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.2-.3-.3-.6-.4z"/></svg>
+  </a>
+
+  <!-- Mobile bottom navigation -->
+  <nav class="bottom-nav" aria-label="Quick navigation">
+    <a href="#top">
+      <svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>
+      <span>Home</span>
+    </a>
+    <a href="#shop">
+      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>
+      <span>Shop</span>
+    </a>
+    <button type="button" data-open="account">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      <span>Account</span>
+    </button>
+    <button type="button" data-open="wish">
+      <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.5-9.3C1 8 3.4 4.5 7 4.5c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.6 0 6 3.5 4.5 7.2C19.5 16.4 12 21 12 21z"/></svg>
+      <span>Wishlist</span><i class="badge" data-badge="wish">0</i>
+    </button>
+    <button type="button" data-open="cart" class="bn-cart">
+      <svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 2-1.5L21 8H6.2"/><circle cx="10" cy="20.5" r="1.3"/><circle cx="17.5" cy="20.5" r="1.3"/></svg>
+      <span>Cart</span><i class="badge" data-badge="cart">0</i>
+    </button>
+  </nav>
+
+  <!-- Drawer: cart / wishlist -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <div class="drawer-tabs">
+        <button data-panel="cart" class="active">Cart <span id="cartCount2">0</span></button>
+        <button data-panel="wish">Wishlist <span id="wishCount2">0</span></button>
+      </div>
+      <button class="icon-btn" id="closeDrawer" aria-label="Close">✕</button>
+    </div>
+    <div class="drawer-body" id="cartPanel"></div>
+    <div class="drawer-body hidden" id="wishPanel"></div>
+    <div class="drawer-foot" id="cartFoot">
+      <label class="ship-to">Delivering to
+        <select id="shipTo">
+          <option value="aptg">Andhra Pradesh / Telangana (3–6 days)</option>
+          <option value="india">Other Indian states (5–9 days)</option>
+          <option value="intl">International (via WhatsApp)</option>
+        </select>
+      </label>
+      <form class="coupon" id="couponForm">
+        <input id="couponInput" placeholder="Coupon code" autocomplete="off" aria-label="Coupon code" />
+        <button class="btn btn-outline" type="submit">Apply</button>
+      </form>
+      <div id="totals"></div>
+      <p class="ship-note" id="shipNote"></p>
+      <button class="btn btn-primary block" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Quick view -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <button class="icon-btn modal-close" id="closeModal" aria-label="Close">✕</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Checkout -->
+  <div class="modal" id="checkout" aria-hidden="true">
+    <div class="modal-card small" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+      <button class="icon-btn modal-close" data-close="checkout" aria-label="Close">✕</button>
+      <h3 id="checkoutTitle">Delivery details</h3>
+      <p class="muted">Order total: <b id="checkoutTotal">₹0</b></p>
+      <div class="saved-addr" id="savedAddr" hidden></div>
+      <form id="checkoutForm" class="form">
+        <input name="name" id="coName" required maxlength="80" placeholder="Full name" autocomplete="name" />
+        <div class="row2">
+          <input name="phone" id="coPhone" required placeholder="Phone number" inputmode="tel" pattern="[0-9+ ]{10,15}" autocomplete="tel" />
+          <input name="email" id="coEmail" type="email" placeholder="Email (optional)" autocomplete="email" />
+        </div>
+        <div class="row2">
+          <input name="house" id="coHouse" required maxlength="80" placeholder="House / flat no." autocomplete="address-line1" />
+          <input name="street" id="coStreet" required maxlength="120" placeholder="Street / road" autocomplete="address-line2" />
+        </div>
+        <div class="row2">
+          <input name="area" id="coArea" required maxlength="120" placeholder="Area / locality" autocomplete="address-level3" />
+          <input name="landmark" id="coLandmark" maxlength="80" placeholder="Landmark (optional)" />
+        </div>
+        <div class="row2">
+          <input name="city" id="coCity" required placeholder="City" autocomplete="address-level2" />
+          <input name="pin" id="coPin" required placeholder="PIN / ZIP" autocomplete="postal-code" />
+        </div>
+        <div class="save-addr" id="saveAddrWrap" hidden>
+          <label class="check-line"><input type="checkbox" name="saveAddr" id="coSaveAddr" checked /> Save this address for next time</label>
+          <input name="addrLabel" id="coAddrLabel" maxlength="30" placeholder="Name it, e.g. Home, Office, Amma" />
+        </div>
+        <div class="subscribe" id="subscribeWrap" hidden>
+          <label for="coSubscribe">Repeat this order</label>
+          <select name="subscribe" id="coSubscribe"><option value="">Just this once</option><option value="14">Every 2 weeks</option><option value="28">Every 4 weeks</option></select>
+          <small class="muted" id="subscribeNote"></small>
+        </div>
+        <label class="check-line"><input type="checkbox" name="gift" id="coGift" /> 🎁 This is a gift</label>
+        <textarea name="giftMessage" id="coGiftMsg" rows="2" maxlength="200" placeholder="Gift message (printed on the packing slip; prices are left off)" hidden></textarea>
+        <textarea name="note" id="coNote" rows="1" maxlength="500" placeholder="Anything else? (optional)"></textarea>
+        <label class="heard" for="coHeard">How did you hear about us? <small>(optional)</small></label>
+        <select name="heard" id="coHeard">
+          <option value="">Choose one</option>
+          <option value="instagram">Instagram</option>
+          <option value="facebook">Facebook</option>
+          <option value="youtube">YouTube</option>
+          <option value="google">Google search</option>
+          <option value="whatsapp">WhatsApp</option>
+          <option value="friend">Friend or family</option>
+          <option value="shop">Visited our shop in Guntur / Vijayawada</option>
+          <option value="returning">I've ordered before</option>
+          <option value="other">Other</option>
+        </select>
+        <fieldset class="pay">
+          <legend>Payment</legend>
+          <div id="payOptions"></div>
+        </fieldset>
+        <button class="btn btn-primary block" type="submit" id="placeBtn">Place order</button>
+        <p class="agree">By placing your order you agree to our <a href="policies/terms.html" target="_blank">Terms</a> and <a href="policies/refund.html" target="_blank">Refund policy</a>.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Order placed -->
+  <div class="modal" id="success" aria-hidden="true">
+    <div class="modal-card small center" role="dialog" aria-modal="true">
+      <button class="icon-btn modal-close" data-close="success" aria-label="Close">✕</button>
+      <div id="successBody"></div>
+    </div>
+  </div>
+
+  <!-- Track order -->
+  <div class="modal" id="track" aria-hidden="true">
+    <div class="modal-card small" role="dialog" aria-modal="true" aria-labelledby="trackTitle">
+      <button class="icon-btn modal-close" data-close="track" aria-label="Close">✕</button>
+      <h3 id="trackTitle">Track your order</h3>
+      <p class="muted">Enter your order number and the phone number you ordered with.</p>
+      <form id="trackForm" class="form">
+        <input id="trackCode" required placeholder="Order number, e.g. TC261021-AB12CD" autocomplete="off" />
+        <input id="trackPhone" required placeholder="Phone number" inputmode="tel" />
+        <button class="btn btn-primary block" type="submit">Track order</button>
+      </form>
+      <div id="trackResult" class="track-result"></div>
+    </div>
+  </div>
+
+  <!-- Login with OTP -->
+  <div class="modal" id="login" aria-hidden="true">
+    <div class="modal-card small" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+      <button class="icon-btn modal-close" data-close="login" aria-label="Close">✕</button>
+      <h3 id="loginTitle">Log in with your email</h3>
+      <p class="muted" id="loginHint">We'll email you a login code.</p>
+      <form id="emailForm" class="form">
+        <input id="loginEmail" type="email" required maxlength="120" placeholder="you@email.com" autocomplete="email" />
+        <button class="btn btn-primary block" type="submit" id="sendOtpBtn">Send code</button>
+      </form>
+      <form id="otpForm" class="form" hidden>
+        <input id="loginOtp" required inputmode="numeric" maxlength="8" pattern="[0-9]{6,8}" placeholder="Enter the code" autocomplete="one-time-code" class="otp-in" />
+        <button class="btn btn-primary block" type="submit" id="verifyOtpBtn">Verify &amp; log in</button>
+        <p class="muted center-text"><button type="button" class="linkish" id="changeEmail">Change email</button> · <button type="button" class="linkish" id="resendOtp" disabled>Resend code</button></p>
+      </form>
+      <p class="err" id="loginErr"></p>
+    </div>
+  </div>
+
+  <!-- My account -->
+  <div class="modal" id="account" aria-hidden="true">
+    <div class="modal-card small" role="dialog" aria-modal="true" aria-labelledby="accountTitle">
+      <button class="icon-btn modal-close" data-close="account" aria-label="Close">✕</button>
+      <h3 id="accountTitle">My account</h3>
+      <div id="accountBody"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+(function(){
+var CAT={"products": [{"id": 15001915916448, "h": "chilli-powder", "t": "Guntur Chilli Powder / Guntur Pachi Karam", "c": "chilli", "d": "Guntur Chili Powder (SPICY)\nOur Guntur Chili Powder is made from the finest quality chillies, sourced directly from guntur farmers. After careful cleaning and destemming, the chillies are sun-dried to lock in their natural flavor and heat. We then grind them using traditional methods to preserve their vibrant taste and freshness.\n\nThis pure, aromatic powder is the perfect addition to pickles, curries, and other savory dishes, offering a rich depth of flavor and a satisfying heat. Crafted with care and attention to detail, our raw chili powder brings authenticity and a bold kick to your kitchen creations.", "img": "img/chilli-powder.jpg", "g": [], "m": true, "nv": false, "pin": null, "r": null, "v": [{"id": 1001, "t": "250 g", "p": 137, "a": true}, {"id": 1002, "t": "500 g", "p": 275, "a": true}, {"id": 1003, "t": "1 kg", "p": 550, "a": true}, {"id": 1004, "t": "2 kg", "p": 1050, "a": false}, {"id": 1005, "t": "3 kg", "p": 1500, "a": false}]}, {"id": 15007031230624, "h": "masala-chilli-powder-kura-karam", "t": "Masala Chilli Powder / Kura Karam / Sambhar Karam", "c": "chilli", "d": "Special Masala Chili Powder\nSourced directly from Guntur farmers, our Masala Chilli Powder is crafted with the finest, handpicked chillies. After thorough cleaning and de stemming, the chillies are naturally sun-dried to preserve their full flavour and potency. We then grind them using traditional methods to maintain the integrity of their natural oils, ensuring a rich, aromatic, and vibrant spice that enhances every dish.\n\nWhat sets our masala chilli powder apart is the carefully selected blend of roasted spices mixed with Guntur chillies, creating a perfect balance of heat, flavour, and complexity. Ideal for curries, stews, and a wide range of Indian dishes, this masala adds depth and an authentic kick to your cooking.\n\nExperience the essence of tradition with every sprinkle—our Masala Chili Powder is the signature spice your kitchen needs.", "img": "img/masala-chilli-powder-kura-karam.jpg", "g": [], "m": true, "nv": false, "pin": null, "r": null, "v": [{"id": 1006, "t": "250 g", "p": 137, "a": true}, {"id": 1007, "t": "500 g", "p": 275, "a": true}, {"id": 1008, "t": "1 kg", "p": 550, "a": true}, {"id": 1009, "t": "2 kg", "p": 1050, "a": true}, {"id": 1010, "t": "3 kg", "p": 1500, "a": true}]}, {"id": 15027689259168, "h": "pickles-chilli-powder-pachalla-karam", "t": "Pickles Chilli Powder / Pachalla Karam", "c": "chilli", "d": "TRUCHILLI'S Special Pickle Chili Powder is specially crafted to bring out the authentic flavors of traditional pickles. Made from the finest Guntur chilies, this premium spice blend is carefully processed to retain its rich color, fiery heat, and intense aroma—perfect for enhancing the taste of homemade pickles.\n\n•\nVibrant Color & Strong Flavor – Ensures your pickles look and taste authentic.\n\n•\nFine Yet Textured Grind – Ideal for better absorption in pickling oils and masalas.\n\n•\n100% Pure & Natural – No artificial colors or preservatives, just pure spice.\n\n•\nSourced from the Heart of Guntur – Bringing you the legacy of Andhra’s spice culture.\n\nGive your pickles the perfect balance of heat and aroma with TRUCHILLI’s special chili powder—a must-have for every pickle lover!", "img": "img/pickles-chilli-powder-pachalla-karam.jpg", "g": [], "m": true, "nv": false, "pin": null, "r": null, "v": [{"id": 1011, "t": "250 g", "p": 150, "a": true}, {"id": 1012, "t": "500 g", "p": 300, "a": true}, {"id": 1013, "t": "1 kg", "p": 600, "a": true}]}, {"id": 15226498646176, "h": "byadgi-chilli-powder-byadgi-kaya-pachi-karam", "t": "Byadagi / Kashmiri Chilli Powder", "c": "chilli", "d": "Experience the vibrant red color and gentle aroma of Truchilli Byadagi Chilli Powder, crafted from premium Byadagi variety chillies grown in the fertile fields of Guntur. Known for their rich natural colour and mild heat, these chillies bring depth and beauty to your dishes — without overpowering spice.\n\nPrepared carefully in small batches, this powder is made the traditional way — just like homemade. It’s 100% natural, free from artificial colours, preservatives, and chemicals, ensuring purity and freshness in every spoonful.\n\nWhile Guntur Chilli Powder is known for its strong heat and sharp spice, Byadagi Chilli Powder stands out for its bright red hue, pleasant aroma, and subtle flavour. It’s perfect for dishes where you want vibrant colour with balanced, mild spice — from curries and pickles to traditional Andhra recipes.", "img": "img/byadgi-chilli-powder-byadgi-kaya-pachi-karam.jpg", "g": [], "m": true, "nv": false, "pin": null, "r": null, "v": [{"id": 1014, "t": "250 g", "p": 175, "a": true}, {"id": 1015, "t": "500 g", "p": 350, "a": true}, {"id": 1016, "t": "1 kg", "p": 700, "a": true}]}, {"id": 15243796152480, "h": "cashew-chilli-powder-jeedipappu-karam-podi", "t": "Cashew Chilli Powder / Jeedipappu Karam Podi", "c": "podis", "d": "Enjoy a rich, nutty, and spicy flavor with Truchilli Cashew Chilli Powder, also known as Jeedipappu Karam Podi.Made using roasted cashews blended with premium Guntur red chillies, garlic, and traditional spices, this podi delivers a creamy texture with a fiery taste.\n\nPerfect for sprinkling on hot rice with ghee, dosa, idli, upma, rice bowls, curries, fries, snacks, and marinades—this luxurious podi adds a beautifully rich flavor to anything you pair it with.\n\n•\nMade with premium roasted cashews & Guntur chillies\n\n•\nRich, creamy, and spicy flavor profile\n\n•\nSlow-ground in small batches for freshness\n\n•\nNo preservatives, artificial colours, or chemicals\n\n•\nHigh-energy, protein-rich podi\n\n•\nAmazing for tiffins, rice, snacks, gravies & seasoning\n\nA premium nutty-spicy blend — rich in taste, rich in quality.", "img": "img/cashew-chilli-powder-jeedipappu-karam-podi.jpg", "g": [], "m": true, "nv": false, "pin": null, "r": null, "v": [{"id": 1017, "t": "200 g", "p": 140, "a": true}, {"id": 1018, "t": "1 kg", "p": 700, "a": true}]}, {"id": 15159212966048, "h": "idly-karam-podi-nalla-karam-maddupu-karam", "t": "Idly Karam Podi / Nalla Karam / Maadupu Karam", "c": "podis", "d": "Spice up your breakfasts with Truchilli’s Idly Karam Podi (also known as Kalla Karam or Maadupu Karam), a traditional South Indian blend made using age-old methods for authentic flavor and aroma.\n\n•\nAuthentic Taste: Perfectly roasted and ground spices to complement idlis, dosas, and rice.\n\n•\nVersatile Usage: Mix with hot ghee or oil for a delicious side, or sprinkle directly on idlis and dosas for that classic Andhra touch.", "img": "img/idly-karam-podi-nalla-karam-maddupu-karam.jpg", "g": [], "m": true, "nv": false, "pin": null, "r": null, "v": [{"id": 1019, "t": "250 g", "p": 137, "a": true}, {"id": 1020, "t": "500 g", "p": 275, "a": true}, {"id": 1021, "t": "1 kg", "p": 550, "a": true}]}, {"id": 15155224772768, "h": "curry-leaf-powder-karivepaku-karam", "t": "Curry Leaf Chilli Powder / Karivepaku Karam", "c": "podis", "d": "\"Fresh Aroma, Authentic Andhra Taste in Every Spoon\"\n\nExperience the rich flavor and health benefits of our Curry Leaf Powder (Karivepaku Karam Podi), prepared with utmost care to deliver both taste and nutrition. Our process involves:\n\n•\nWell-Cleaned: Only fresh, farm-picked curry leaves are used\n\n•\nShade-Dried: To retain natural aroma, color, and nutrients\n\n•\nOil-Roasted: Lightly roasted in oil for enhanced taste & longer shelf life\n\n•\nLow-Temperature Grinded: To preserve the natural flavors & goodness of ingredients\n\nPerfect for mixing with hot rice & ghee or sprinkling over idlis, dosas, and curries, this podi brings authentic Andhra flavors to your plate.", "img": "img/curry-leaf-powder-karivepaku-karam.jpg", "g": [], "m": true, "nv": false, "pin": null, "r": null, "v": [{"id": 1022, "t": "200 g", "p": 130, "a": true}, {"id": 1023, "t": "1 kg", "p": 650, "a": true}]}, {"id": 15155226771616, "h": "toor-dal-powder-kandi-podi", "t": "Toor Dal Chilli Powder / Kandhi Karam Podi", "c": "podis", "d": "\"Traditional Taste, Homemade Goodness\"\n\nOur Kandi Podi is prepared using premium quality toor dal, lightly roasted with spices, and ground at low temperatures to preserve freshness and nutrition. This flavorful, protein-rich powder is a must-have for any Andhra kitchen.\n\nAdd a spoonful to hot rice, drizzle with ghee, and enjoy the classic spicy, nutty aroma of traditional Andhra cuisine.", "img": "img/toor-dal-powder-kandi-podi.jpg", "g": [], "m": true, "nv": false, "pin": null, "r": null, "v": [{"id": 1024, "t": "200 g", "p": 110, "a": true}, {"id": 1025, "t": "1 kg", "p": 550, "a": true}]}, {"id": 15155217301664, "h": "chana-dal-powder-senaga-pappu-karam-podi", "t": "Chana Dal Chilli Powder / Senaga Pappu Karam Podi", "c": "podis", "d": "Our Chana Dal Powder (Senaga Pappu Karam Podi) is made from premium-quality chana dal, slow-roasted and grinded at low temperatures to preserve freshness and flavor. Blended with traditional spices, this podi adds a nutty, spicy punch to hot rice with ghee, idlis, or dosas.\n\n•\n100% Natural: No artificial colors or preservatives\n\n•\nLow-Temperature Grinding: Retains nutrition & aroma\n\n•\nTraditional Taste: Andhra-style homemade flavor\n\n•\nVersatile Use: Perfect with rice, breakfast dishes, or curries", "img": "img/chana-dal-powder-senaga-pappu-karam-podi.jpg", "g": [], "m": true, "nv": false, "pin": null, "r": null, "v": [{"id": 1026, "t": "250 g", "p": 150, "a": true}, {"id": 1027, "t": "500 g", "p": 300, "a": true}, {"id": 1028, "t": "1 kg", "p": 600, "a": true}]}, {"id": 15155222610080, "h": "nuvvula-karam-podi-white-sesame-powder", "t": "White Sesame Seeds Chilli Powder / Nuvvula Karam Podi", "c": "podis", "d": "\"A Nutty Delight with Authentic Andhra Taste\"\n\nExperience the rich, nutty aroma and authentic Andhra flavors with our White Sesame Seeds Powder (Nuvvula Karam Podi). Made using premium-quality sesame seeds, carefully roasted to perfection, and ground at low temperatures, this traditional recipe preserves natural oils, freshness, and nutrients for a true homemade taste.\n\nAdd a spoonful of our Nuvvula Karam Podi to hot steamed rice, drizzle with ghee, and savor the irresistible nutty-spicy punch that will leave you wanting more.\n\nWhy You’ll Love It\n\n•\n100% Natural & Fresh – No preservatives or artificial colors\n\n•\nRich in Nutrition – Full of healthy fats, calcium & antioxidants\n\n•\nAuthentic Andhra Recipe – Perfect blend of sesame, spices & love\n\n•\nVersatile & Flavorful – Pairs with rice, idlis, dosas & curries", "img": "img/nuvvula-karam-podi-white-sesame-powder.jpg", "g": [], "m": true, "nv": false, "pin": null, "r": null, "v": [{"id": 1029, "t": "200 g", "p": 120, "a": true}, {"id": 1030, "t": "1 kg", "p": 600, "a": true}]}, {"id": 15243787960480, "h": "multi-grain-karam-podi", "t": "Multi Grain Chilli Powder / Multi Grain Karam Podi", "c": "podis", "d": "Truchilli Multigrain Chilli Powder\n\nExperience the perfect blend of spice and nutrition with Truchilli Multigrain Chilli Powder. Made using premium quality sun-dried chillies and a nutritious mix of flax seeds, pumpkin seeds, white sesame seeds, and watermelon seeds, this unique blend adds both flavour and health benefits to your meals.\n\nPrepared in small batches using our traditional process, this chilli powder delivers a rich aroma, balanced heat, and a nutty texture from the wholesome seeds. It is a perfect combination of taste, nutrition, and authentic Andhra spice.\n\n🌶 Why Choose Truchilli Multigrain Chilli Powder?• Made with premium sun-dried chillies• Enriched with flax seeds, pumpkin seeds, white sesame seeds & watermelon seeds• Rich in natural nutrients and healthy fats• Traditional homemade style preparation• No artificial colors or preservatives• Freshly prepared in small batches\n\n🍽 Perfect For:• Idli / Dosa / Upma topping• Mixing with hot rice and ghee• Sprinkling on snacks and salads• Adding flavour to curries and stir fries\n\nAt Truchilli, we don’t just sell chilli powder — we deliver quality and authentic taste in every spoon.", "img": "img/multi-grain-karam-podi.jpg", "g": [], "m": true, "nv": false, "pin": null, "r": null, "v": [{"id": 1031, "t": "200 g", "p": 140, "a": true}, {"id": 1032, "t": "1 kg", "p": 700, "a": true}]}, {"id": 15158677930144, "h": "moringa-powder-mulagaku-karam-podi", "t": "Moringa Chilli Powder / Munagaku Karam Podi", "c": "podis", "d": "Bring home the goodness of nature with Truchilli’s Moringa Chilli Powder (Munagaku Karam Podi), crafted using traditional methods for an authentic taste.\n\n•\nAuthentic & Traditional: Sourced from fresh Moringa leaves, shade-dried to preserve nutrients, and grinded at low temperatures to maintain natural color, flavor, and aroma.\n\n•\n100% Natural: No preservatives, no artificial colors, no additives — just pure, healthy ingredients.\n\n•\nNutrient-Rich Superfood: Packed with iron, calcium, and antioxidants, making it a perfect addition to your daily meals.\n\n•\nVersatile Use: Mix with hot rice and ghee, sprinkle on curries, blend into soups, or enhance your sambhar with its unique flavor.", "img": "img/moringa-powder-mulagaku-karam-podi.jpg", "g": [], "m": true, "nv": false, "pin": null, "r": null, "v": [{"id": 1033, "t": "200 g", "p": 130, "a": false}, {"id": 1034, "t": "1 kg", "p": 650, "a": false}]}, {"id": 15187888046240, "h": "garam-masala", "t": "Garam Masala", "c": "masalas", "d": "Add depth and warmth to your cooking with Truchilli Garam Masala. A balanced mix of premium spices, this blend enhances curries, biryanis, and stir-fries with a rich aroma and authentic flavor. Made in small batches, Truchilli ensures you get the freshest, most aromatic masala every time.\n\n•\nBlend of cardamom, cloves, cinnamon, cumin, black pepper & more\n\n•\nNo artificial colours, preservatives, or fillers\n\n•\nPerfect for gravies, curries, biryani, and even snacks\n\n•\nCrafted in small batches for premium freshness\n\nTurn everyday meals into rich, aromatic feasts with Truchilli Garam Masala.", "img": "img/garam-masala.jpg", "g": [], "m": false, "nv": false, "pin": null, "r": null, "v": [{"id": 1035, "t": "200 g", "p": 220, "a": true}, {"id": 1036, "t": "1 kg", "p": 1100, "a": true}]}, {"id": 15225189040288, "h": "chicken-masala", "t": "Chicken Masala", "c": "masalas", "d": "Experience the warmth of home-cooked flavor in every bite with Truchilli Chicken Masala — a traditional blend made with care, patience, and purity.\n\nEach pack is made in small batches using carefully selected, premium-quality spices that capture the true essence of Indian cooking. Our recipe brings together the perfect balance of heat, color, and aroma — just like the masala your mother would prepare fresh in her kitchen.\n\nMade with 100% natural ingredients, free from artificial colours, preservatives, and chemicals, Truchilli Chicken Masala adds rich flavor and fragrance to every chicken curry, fry, or roast. It’s not just a spice blend — it’s a taste of home.", "img": "img/chicken-masala.jpg", "g": [], "m": false, "nv": false, "pin": null, "r": null, "v": [{"id": 1037, "t": "200 g", "p": 220, "a": true}, {"id": 1038, "t": "1 kg", "p": 1100, "a": true}]}, {"id": 15187886112928, "h": "mutton-masala", "t": "Mutton Masala", "c": "masalas", "d": "Cook delicious, restaurant-style mutton curry at home with Truchilli Mutton Masala. This blend of premium spices is carefully roasted and ground to give your dishes the perfect balance of aroma, flavor, and richness. Whether you’re preparing a spicy Andhra-style curry or a slow-cooked mutton gravy, this masala brings authentic taste straight to your kitchen.", "img": "img/mutton-masala.jpg", "g": [], "m": false, "nv": false, "pin": null, "r": null, "v": [{"id": 1039, "t": "200 g", "p": 220, "a": true}, {"id": 1040, "t": "1 kg", "p": 1100, "a": true}]}, {"id": 15225174786208, "h": "fish-masala", "t": "Fish Masala", "c": "masalas", "d": "Bring the rich, coastal flavors of India to your kitchen with Truchilli Fish Masala. Crafted in small batches using premium, sun-dried spices, this blend adds the perfect balance of aroma, spice, and tang to every fish curry or fry.\n\nPrepared with our signature slow-grinding process, this masala preserves the freshness and natural oils of the spices. Completely free from colours, preservatives, or chemicals, it delivers that authentic homemade taste every time.", "img": "img/fish-masala.jpg", "g": [], "m": false, "nv": false, "pin": null, "r": null, "v": [{"id": 1041, "t": "200 g", "p": 180, "a": true}, {"id": 1042, "t": "1 kg", "p": 900, "a": true}]}, {"id": 15243790516384, "h": "biryani-masala", "t": "Biryani Masala", "c": "masalas", "d": "TRUCHILLI Biryani Masala – Authentic Kerala-Sourced Blend\n\nBring rich aroma, balanced spices, and restaurant-style taste to your homemade biryani with TRUCHILLI Biryani Masala. Made from carefully selected export-quality spices sourced from Kerala, this blend is crafted in small batches to deliver authentic flavor in every meal.\n\nWhether you're preparing chicken, mutton, fish, paneer, or vegetable biryani, our biryani masala adds the perfect combination of warmth, aroma, and depth without overpowering the natural taste of the ingredients.\n\nWhy Choose TRUCHILLI Biryani Masala?\n\n✔ Made with premium Kerala-sourced spices\n✔ Rich aroma and authentic biryani flavor\n✔ Suitable for chicken, mutton, fish, veg & paneer biryani\n✔ No added artificial colors\n✔ Small-batch prepared for freshness\n✔ Carefully packed to retain aroma\n\nHow to Use\n\nAdd 1–2 tablespoons of TRUCHILLI Biryani Masala while cooking the gravy or masala base. Adjust quantity according to taste and the quantity of rice and meat used.\n\nIngredients\n\nCoriander, Cumin, Fennel, Black Pepper, Green Cardamom, Cloves, Cinnamon, Bay Leaf, Star Anise, Mace, Nutmeg, Stone Flower and other aromatic spices.\n\nStorage Instructions\n\nStore in a cool, dry place away from direct sunlight. Keep the pack tightly sealed after use.\n\nTRUCHILLI – From The Guntur Mirchi\nWe don't just sell spice powders; we deliver quality and authentic taste to your kitchen.\n\nPrepared in small batches. Slight variations in color and aroma may occur as this is a natural product.", "img": "img/biryani-masala.jpg", "g": [], "m": false, "nv": false, "pin": null, "r": null, "v": [{"id": 1043, "t": "200 g", "p": 220, "a": true}, {"id": 1044, "t": "1 kg", "p": 1100, "a": true}]}, {"id": 15187872678048, "h": "sambar-powder", "t": "Sambar Powder", "c": "masalas", "d": "Elevate your meals with the rich, aromatic taste of Truchilli Sambar Powder. Crafted from a balanced blend of lentils, spices, and chillies, this traditional recipe brings home the authentic South Indian sambar flavor. Perfect for pairing with idli, dosa, rice, or vada, every spoonful delivers homestyle taste and freshness.", "img": "img/sambar-powder.jpg", "g": [], "m": false, "nv": false, "pin": null, "r": null, "v": [{"id": 1045, "t": "200 g", "p": 140, "a": true}, {"id": 1046, "t": "1 kg", "p": 700, "a": true}]}, {"id": 15187870056608, "h": "rasam-powder", "t": "Rasam Powder", "c": "masalas", "d": "Bring home the authentic taste of South Indian kitchens with Truchilli Rasam Powder. Carefully blended with premium spices, our rasam powder makes every bowl tangy, spicy, and aromatic. Perfect for soothing rasam rice or as a side soup, this blend captures traditional flavors in every sip.", "img": "img/rasam-powder.jpg", "g": [], "m": false, "nv": false, "pin": null, "r": null, "v": [{"id": 1047, "t": "200 g", "p": 140, "a": true}, {"id": 1048, "t": "1 kg", "p": 700, "a": true}]}, {"id": 15243801034912, "h": "chai-masala", "t": "Chai Masala", "c": "masalas", "d": "Make every cup of chai aromatic and soulful with Truchilli Tea Masala — a premium blend of fragrant spices crafted to elevate your everyday tea.\n\nPrepared using high-quality spices like cardamom, cloves, cinnamon, ginger, pepper, and nutmeg, this masala infuses your tea with warmth, aroma, and a rich traditional taste.Perfect for morning chai, evening tea, milk tea, masala chai, cutting chai, and even kadha preparations.\n\n•\nCrafted with premium whole spices\n\n•\nStrong aroma & perfect balance of spice\n\n•\nNo artificial flavours, colours, or preservatives\n\n•\nEnhances immunity & digestion\n\n•\nMade in small batches for maximum freshness\n\nOne pinch of Truchilli Tea Masala — and your chai becomes unforgettable.", "img": "img/chai-masala.jpg", "g": [], "m": false, "nv": false, "pin": null, "r": null, "v": [{"id": 1049, "t": "100 g", "p": 100, "a": true}, {"id": 1050, "t": "200 g", "p": 200, "a": true}]}, {"id": 15243798020256, "h": "buttermilk-chhach-majjiga-masala", "t": "Buttermilk / Majjiga Masala", "c": "masalas", "d": "Add a refreshing burst of flavour to your buttermilk with Truchilli Buttermilk Masala, a perfect blend of spices crafted to make your majjiga/buttermilk tasty, cooling, and healthy.\n\nMade with premium spices like roasted cumin, coriander, black salt, pepper, ginger, and herbs, this masala instantly enhances buttermilk, curd, salads, fruits, chaas, raita, and even soups.A perfect daily-use spice mix for digestion, refreshment, and flavour.\n\n•\nCrafted with premium roasted spices\n\n•\nBoosts digestion & keeps the body cool\n\n•\nNo preservatives, artificial colors, or chemicals\n\n•\nPerfect for majjiga, chhach, raita, salads & snacks\n\n•\nMade in small batches for maximum freshness\n\nCool, refreshing, spicy — your perfect daily buttermilk companion.", "img": "img/buttermilk-chhach-majjiga-masala.jpg", "g": [], "m": false, "nv": false, "pin": null, "r": null, "v": [{"id": 1051, "t": "100 g", "p": 75, "a": true}, {"id": 1052, "t": "200 g", "p": 150, "a": true}]}, {"id": 15225159352480, "h": "coriander-powder-dhaniya-podi", "t": "Coriander Powder / Dhaniya Podi", "c": "masalas", "d": "Truchilli Coriander Powder is made from carefully selected, premium-quality coriander seeds grinded in small batches to preserve their natural aroma and freshness. Known for its mild, earthy flavor and citrusy notes, this powder adds depth and balance to curries, dals, chutneys, and spice blends.\n\nPrepared just like homemade — completely natural, without any colours, preservatives, or chemicals, our coriander powder captures the true essence of traditional Indian cooking.", "img": "img/coriander-powder-dhaniya-podi.jpg", "g": [], "m": false, "nv": false, "pin": null, "r": null, "v": [{"id": 1053, "t": "250 g", "p": 100, "a": true}, {"id": 1054, "t": "500 g", "p": 200, "a": true}, {"id": 1055, "t": "1 kg", "p": 400, "a": true}]}, {"id": 15796111769760, "h": "jeera-powder-jilakarra-podi", "t": "Jeera Powder / Jilakarra Podi", "c": "masalas", "d": "Truchilli Jeera Powder is made from carefully selected, premium-quality cumin seeds and processed using our slow-grinding method to preserve their natural aroma, flavour, and freshness.\n\nEven though we use large-scale machinery, we intentionally grind in small batches at a slow pace to minimise heat generation during processing. This helps retain the natural oils, rich aroma, and authentic flavour of cumin without compromising its original quality.\n\nPrepared with the same care as homemade — 100% natural, with no added colours, preservatives, or chemicals. Just pure, aromatic Jeera Powder made with a process where quality comes before quantity.", "img": "img/jeera-powder-jilakarra-podi.jpg", "g": [], "m": false, "nv": false, "pin": null, "r": null, "v": [{"id": 1056, "t": "250 g", "p": 125, "a": true}, {"id": 1057, "t": "500 g", "p": 250, "a": true}, {"id": 1058, "t": "1 kg", "p": 500, "a": true}]}, {"id": 15787443650720, "h": "gongura-pickle", "t": "Gongura Pickle", "c": "pickles", "d": "🌿 Truchilli Gongura Pickle 🌿\n\nMade with fresh, hand-picked gongura leaves and our traditional Andhra recipe, our Gongura Pickle delivers the perfect blend of tanginess, spice, and authentic homemade flavour.\n\nPrepared in small batches using premium ingredients and cold-pressed oils to preserve its rich taste and natural aroma. Every spoonful brings you the true taste of Andhra's favourite gongura pickle. ❤️\n\nPerfect with hot rice, ghee, dosa, chapati, or curd rice!\n\n✨ Homemade Taste\n✨ Authentic Andhra Style\n✨ No Compromise on Quality\n\nTaste the tang, taste the tradition with Truchilli.", "img": "img/gongura-pickle.jpg", "g": [], "m": false, "nv": false, "pin": null, "r": null, "v": [{"id": 1059, "t": "250 g", "p": 175, "a": true}, {"id": 1060, "t": "500 g", "p": 350, "a": true}, {"id": 1061, "t": "1 kg", "p": 700, "a": true}]}, {"id": 15149741375648, "h": "turmeric-powder-pasupu", "t": "Turmeric Powder / Pasupu", "c": "essentials", "d": "At Truchilli, we bring you spices in their purest and most authentic form. Our Turmeric Powder is made from carefully handpicked turmeric roots, directly sourced from trusted farmers. The roots are cleaned, sun-dried, and grinded at low temperature to lock in their natural oils, aroma, and medicinal properties.\n\nPacked with curcumin – a powerful antioxidant, Truchilli turmeric adds not just a rich golden hue to your dishes but also supports immunity, digestion, and overall wellness. Whether in curries, milk, teas, or home remedies, our turmeric is your perfect choice for authentic taste and natural health.", "img": "img/turmeric-powder-pasupu.jpg", "g": [], "m": false, "nv": false, "pin": null, "r": null, "v": [{"id": 1062, "t": "250 g", "p": 75, "a": true}, {"id": 1063, "t": "500 g", "p": 150, "a": true}, {"id": 1064, "t": "1 kg", "p": 300, "a": true}]}, {"id": 15814929842336, "h": "sprouted-ragi-flour", "t": "Sprouted Ragi Flour / Molakala Ragi Pindi", "c": "essentials", "d": "TRUCHILLI Sprouted Ragi Flour (Molakala Ragi Pindi)\n\nMade the traditional way. Packed with natural goodness.\n\nTRUCHILLI Sprouted Ragi Flour is prepared using carefully selected premium ragi (finger millet) grains that are naturally sprouted, sun-dried, and hygienically milled to preserve their nutrition and authentic taste. Sprouting enhances the nutritional value and makes the flour easier to digest, making it an excellent choice for all age groups.\n\nWhether you're preparing healthy porridge, dosa, roti, malt, pancakes, or baby food (as advised by your healthcare professional), our sprouted ragi flour brings wholesome nutrition to every meal.\n\nWhy Choose TRUCHILLI Sprouted Ragi Flour?\n\n• Made from premium quality finger millet\n\n• Naturally sprouted for enhanced nutrition\n\n• No preservatives, artificial colours, or additives\n\n• Hygienically processed and packed\n\n• Rich source of dietary fibre and naturally occurring calcium & iron\n\n• Suitable for everyday healthy cooking\n\nWays to Use\n\n• Nutritious Ragi Malt\n\n• Ragi Porridge\n\n• Ragi Dosa\n\n• Ragi Roti\n\n• Ragi Pancakes\n\n• Healthy Baking Recipes\n\n• Traditional Ragi Mudda\n\nIngredients\n\n100% Sprouted Ragi (Finger Millet)\n\nStorage Instructions\n\nStore in a cool, dry place away from direct sunlight. Keep the pouch tightly sealed after every use. Refrigerate after opening for longer freshness.\n\nNet Weight\n\nAvailable in multiple pack sizes.\n\nTRUCHILLI – From The Guntur Mirchi\nBringing you traditional, natural foods prepared with care, quality, and authenticity.", "img": "img/sprouted-ragi-flour.jpg", "g": [], "m": false, "nv": false, "pin": null, "r": null, "v": [{"id": 1065, "t": "250 g", "p": 40, "a": true}, {"id": 1066, "t": "500 g", "p": 80, "a": true}, {"id": 1067, "t": "1 kg", "p": 160, "a": true}]}], "categories": [{"id": "chilli", "name": "Chilli Powders / Kaaram", "cover": "img/chilli-powder.jpg"}, {"id": "podis", "name": "Karam Podis", "cover": "img/cashew-chilli-powder-jeedipappu-karam-podi.jpg"}, {"id": "masalas", "name": "Masalas", "cover": "img/garam-masala.jpg"}, {"id": "pickles", "name": "Pickles", "cover": "img/gongura-pickle.jpg"}, {"id": "essentials", "name": "Turmeric & Ragi Flour", "cover": "img/turmeric-powder-pasupu.jpg"}], "settings": {"whatsapp": "918142424269", "fssai": "10125007000061", "shipping": {"aptg": 99, "india": 99, "freeAbove": 0, "byWeight": true, "tiers": [[1000, 99], [2000, 149], [3000, 179]]}, "cod": true, "intlViaWhatsapp": true, "loginRequired": false, "instagram": "https://www.instagram.com/truchilli", "facebook": "", "offersText": "", "subscribe": null, "onlinePayment": false, "supabase": null}};
+var real=window.fetch.bind(window);
+window.fetch=function(url,opts){
+  var u=String(url); if(u.indexOf("/api/")!==0) return real(url,opts);
+  var p=u.slice(4).split("?")[0], m=(opts&&opts.method)||"GET";
+  var ok=function(d){return Promise.resolve(new Response(JSON.stringify(d),{status:200,headers:{"Content-Type":"application/json"}}));};
+  var no=function(msg){return Promise.resolve(new Response(JSON.stringify({error:msg}),{status:400,headers:{"Content-Type":"application/json"}}));};
+  if(p==="/catalog") return ok(CAT);
+  if(p==="/site") return ok({});
+  if(/\/reviews$/.test(p)&&m==="GET") return ok([]);
+  if(/\/related$/.test(p)) return ok([]);
+  if(p==="/visit"||p==="/cart"||p==="/subscribe") return ok({ok:true});
+  if(p==="/coupons/check") return no("Coupons work on the live site once it is set up.");
+  return no("This is a preview: ordering is switched on once the database and payments are connected.");
+};
+})();
+</script>
+<script src="js/app.js"></script>
+</body>
+</html>

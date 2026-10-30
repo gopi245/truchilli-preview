@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | Truchilli</title>
+  <meta name="description" content="Contact Truchilli (The Guntur Mirchi) for orders, bulk and restaurant enquiries: phone, WhatsApp, email, Guntur and Vijayawada addresses." />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  
+</head>
+<body class="doc-page">
+  <header class="doc-header">
+    <div class="container doc-header-inner">
+      <a href="index.html" class="logo" aria-label="Truchilli home"><img src="assets/logo.png" alt="Truchilli" /></a>
+      <a href="index.html" class="btn btn-ghost doc-back">← Back to shop</a>
+    </div>
+  </header>
+
+  <main class="container contact-layout">
+    <section class="contact-info">
+      <p class="eyebrow">We'd love to hear from you</p>
+      <h1>Contact Us</h1>
+      <p class="lead">Questions about an order, bulk or restaurant supply, or reseller enquiries: call, WhatsApp or email us.</p>
+
+      <div class="contact-cards">
+        <a class="contact-card" href="https://wa.me/918142424269" target="_blank" rel="noopener">
+          <span class="cc-ic">💬</span>
+          <span><b>WhatsApp</b><small>+91 81424 24269</small></span>
+        </a>
+        <a class="contact-card" href="tel:+918142424269">
+          <span class="cc-ic">📞</span>
+          <span><b>Phone</b><small>+91 81424 24269</small></span>
+        </a>
+        <a class="contact-card" href="mailto:thetruchilli@gmail.com">
+          <span class="cc-ic">📧</span>
+          <span><b>Email</b><small>thetruchilli@gmail.com</small></span>
+        </a>
+        <a class="contact-card" href="https://www.instagram.com/truchilli" target="_blank" rel="noopener">
+          <span class="cc-ic">📸</span>
+          <span><b>Instagram</b><small>@truchilli</small></span>
+        </a>
+        <div class="contact-card">
+          <span class="cc-ic">🏭</span>
+          <span><b>Manufacturing unit, Guntur</b><small>87-16-2909, Kamakshi Nagar, Mirchi Yard Road, Guntur 522004, Andhra Pradesh · FSSAI 10125007000061</small></span>
+        </div>
+        <div class="contact-card">
+          <span class="cc-ic">📍</span>
+          <span><b>Distribution unit, Vijayawada</b><small>40-9-102A, Trendset Mall Service Road, Sai Nagar, Benz Circle, Vijayawada 520010, Andhra Pradesh · FSSAI 10125020000613</small></span>
+        </div>
+      </div>
+
+      <p class="muted small">Truchilli is a brand of The Guntur Mirchi.</p>
+      <p class="small"><a href="index.html#track">Track your order</a> · <a href="policies/refund.html">Refund policy</a> · <a href="policies/shipping.html">Shipping policy</a></p>
+    </section>
+
+    <section class="contact-form-card">
+      <h2>Send us a message</h2>
+      <form id="contactForm" class="form">
+        <input id="cName" name="name" required maxlength="80" placeholder="Your name" autocomplete="name" />
+        <div class="row2">
+          <input id="cPhone" name="phone" required inputmode="tel" pattern="[0-9+ ]{10,15}" placeholder="Phone number" autocomplete="tel" />
+          <input id="cEmail" name="email" type="email" placeholder="Email (optional)" autocomplete="email" />
+        </div>
+        <select id="cTopic" name="topic" aria-label="Topic">
+          <option>Question about my order</option>
+          <option>Bulk / restaurant / hotel supply</option>
+          <option>Reseller or distributor enquiry</option>
+          <option>Feedback</option>
+          <option>Something else</option>
+        </select>
+        <input id="cOrder" name="order" maxlength="30" placeholder="Order number (if you have one)" />
+        <textarea id="cMsg" name="message" required minlength="5" maxlength="2000" rows="5" placeholder="How can we help?"></textarea>
+        <button class="btn btn-primary block" type="submit" id="cSend">Send message</button>
+        <p class="form-msg" id="cResult" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="doc-footer">
+    <div class="container">
+      <a href="policies/privacy.html">Privacy</a> · <a href="policies/refund.html">Refunds</a> ·
+      <a href="policies/shipping.html">Shipping</a> · <a href="policies/terms.html">Terms</a>
+      <br />© <span id="y"></span> Truchilli · The Guntur Mirchi
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    const form = document.getElementById("contactForm");
+    const out = document.getElementById("cResult");
+    form.addEventListener("submit", async e => {
+      e.preventDefault();
+      const btn = document.getElementById("cSend");
+      btn.disabled = true;
+      btn.textContent = "Sending…";
+      out.className = "form-msg";
+      out.textContent = "";
+      try {
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(Object.fromEntries(new FormData(form))),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(data.error || "Couldn't send your message. Please try WhatsApp instead.");
+        form.reset();
+        out.className = "form-msg ok";
+        out.textContent = "Thank you! We'll get back to you soon.";
+      } catch (err) {
+        out.className = "form-msg err";
+        out.textContent = err.message;
+      } finally {
+        btn.disabled = false;
+        btn.textContent = "Send message";
+      }
+    });
+  </script>
+</body>
+</html>
